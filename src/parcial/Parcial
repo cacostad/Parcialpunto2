@@ -1,0 +1,48 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package parcial;
+
+
+public class Programacion {
+    
+    
+  private Sala[] salas;
+int contador;
+
+    public Programacion(Sala[] salas) {
+        this.salas = salas;
+        this.contador=0;
+    }
+
+
+
+    
+    
+    
+    public boolean crearprogramacion(String nombre){
+        
+        for (int i=0; i<2;i++){
+            
+            if(nombre==salas[i].getNombredelasala()){
+            
+            System.out.println("Bienvenido a la sala de"+salas[i].getNombredelasala());
+             System.out.println("Asigne la semana del evento");
+            salas[i].asignarsemana();
+            }
+            
+            
+        
+        return true;
+        
+        
+        }
+        
+        return false;
+
+    }
+    
+    
+}
